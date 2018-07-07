@@ -1,4 +1,4 @@
-package br.edu.unoescsmo.regras;
+package br.edu.unoescsmo.bootweb.regras;
 
 import org.springframework.stereotype.Service;
 
