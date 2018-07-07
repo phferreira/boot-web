@@ -1,4 +1,4 @@
-package edru.br.unoescsmo.bootweb;
+package br.edu.unoescsmo.bootweb;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
