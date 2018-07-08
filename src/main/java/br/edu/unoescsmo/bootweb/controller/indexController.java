@@ -1,4 +1,4 @@
-package br.edu.unoescsmo.bootweb;
+package br.edu.unoescsmo.bootweb.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -10,13 +10,10 @@ import br.edu.unoescsmo.bootweb.regras.PessoaRegra;
 @Controller
 public class indexController {
 	
-	@Autowired
-	private PessoaRegra pessoaRegra;
-	
 	@GetMapping("/")
 	@ResponseBody
-	public String salvarPessoa() {
-		return pessoaRegra.Salvar();
+	public String index() {
+		return "teste";
 	}
 
 }
