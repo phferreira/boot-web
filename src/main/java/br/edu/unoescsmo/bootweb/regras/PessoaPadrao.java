@@ -40,4 +40,9 @@ public class PessoaPadrao implements PessoaRegra {
 	public void delete(Pessoa pessoa) {
 		pessoaRepository.delete(pessoa);
 	}
+
+	@Override
+	public Pessoa buscarPorCodigo(Long codigo) {
+		return pessoaRepository.findById(codigo).orElse(new Pessoa());
+	}
 }

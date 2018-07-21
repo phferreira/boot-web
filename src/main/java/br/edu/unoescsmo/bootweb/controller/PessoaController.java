@@ -52,10 +52,15 @@ public class PessoaController {
 		return pessoaRegra.listarPorCpf(cpf);
 	}
 
-	@GetMapping("/pessoa/deletar")
-	@ResponseBody
-	private String deletar() {
-		pessoaRegra.delete(new Pessoa(1L));
-		return "Pessoa deletada";
+	@GetMapping("/deletar/{codigo}")
+	private String deletar(@PathVariable("codigo") Long codigo) {
+		pessoaRegra.delete(new Pessoa(codigo));
+		return "redirect:/pessoa/listar";
+	}
+	
+	@GetMapping("/visualizar/{codigo}")
+	private String visualizar(@PathVariable("codigo") Long codigo, Model model) {
+		model.addAttribute("pessoa", pessoaRegra.buscarPorCodigo(codigo));
+		return "pessoa/visualizar";
 	}
 }
