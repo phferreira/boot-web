@@ -10,13 +10,14 @@
 
 <body>
 
-	<form action="/pessoa/salvar" method="post">
+	<form action="/pessoa/alterar" method="post">
 
 		<input type="hidden" name="codigo" value="${pessoa.codigo}">
 		
-		<c:import url="_campos.jsp" />
+		<c:import url="_campos.jsp"/>
 
-		<input type="submit" name="enviar"> 
+		<button type="submit">Salvar</button> 
+
 		<a href="/pessoa/listar">Cancelar</a>
 		<a href="/pessoa/deletar/${pessoa.codigo}">Deletar</a>
 	</form>
