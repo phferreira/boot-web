@@ -7,13 +7,15 @@
 	</head>
 
 	<body>
-		Funcionou ${valor} teste
-		
-		<form action="/enviar" method="post">
-			<input type="text" name="nome" value="${nome}">
-			<input type="text" name="cpf" value="${cpf}">
+				
+		<form action="/pessoa/salvar" method="post">
+			<label for="nome">Nome</label>
+			<input type="text" name="nome" id="nome">
+			<label for="cpf">CPF</label>
+			<input type="text" name="cpf" id="cpf">
+			
 			<input type="submit" name="enviar">
-			<input type="submit" name="cancelar">
+			<a href="/pessoa/lista">Cancelar</a>
 		</form>
 		
 	</body>

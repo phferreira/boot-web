@@ -12,6 +12,14 @@ public class Pessoa {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long codigo;
 
+	public Long getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(Long codigo) {
+		this.codigo = codigo;
+	}
+
 	@Column(name = "tx_nome", length = 150, nullable = false)
 	private String nome;
 
