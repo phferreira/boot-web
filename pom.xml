@@ -7,7 +7,6 @@
 	<groupId>br.edu.unoescsmo</groupId>
 	<artifactId>boot-web</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
 
 	<name>boot-web</name>
 	<description>Demo project for Spring Boot</description>
@@ -49,7 +48,6 @@
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		
-		<!-- Tomcat + JSP -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
@@ -68,10 +66,8 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 		</dependency>
-		<!-- -->
+		
 	</dependencies>
-
-
 
 	<build>
 		<plugins>
